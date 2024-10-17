@@ -17,12 +17,12 @@ def homepage():
             ui.button(text='修改',on_click=lambda: ui.navigate.to('/page2'))
             ui.space()
             ui.button(text='刪除',on_click=lambda: ui.navigate.to('/'))
-    with ui.grid(columns='100px 100px auto auto').classes('w-full h-full border border-red-400'):
+    with ui.grid(columns='100px 100px auto auto auto').classes('w-full h-full border border-red-400'):
         ui.label('帳號')
         ui.label('密碼')
         ui.label('email')
         ui.label('address')
-        
+        ui.label('number')
 @ ui.page('/page1')
 def page1():
     templayout()   
